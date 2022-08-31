@@ -18,7 +18,17 @@
  * @package WordPress
  */
 
-// ** Database settings - You can get this info from your web host ** //
+// on est dans heroku
+
+if (getenv('JAWSDB_URL')!==false){
+$dbparts = parse_url($url);
+
+$hostname = $dbparts['host'];
+$username = $dbparts['user'];
+$password = $dbparts['pass'];
+$database = ltrim($dbparts['path'],'/');
+} else {
+	// ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'blinkedsolutions' );
 
@@ -94,3 +104,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+}
+
+
