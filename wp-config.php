@@ -18,28 +18,21 @@
  * @package WordPress
  */
 
-// on est dans heroku
+/**  on est dans heroku */
 
-if (getenv('JAWSDB_URL')!==false){
-$dbparts = parse_url($url);
 
-$hostname = $dbparts['host'];
-$username = $dbparts['user'];
-$password = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
-} else {
-	// ** Database settings - You can get this info from your web host ** //
+// ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'blinkedsolutions' );
+define( 'DB_NAME', 'cyq8hpaka9zz9zfc' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'h51nz25xn1jfx3df' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'g7ri1xbgqkb9e8dv' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost:8889' );
+define( 'DB_HOST', 'eyvqcfxf5reja3nv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -104,6 +97,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-}
+
 
 
