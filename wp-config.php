@@ -20,33 +20,25 @@
 
 /**  on est dans heroku */
 
-$url = getenv('JAWSDB_URL');
-$dbparts = parse_url($url);
-
-$hostname = $dbparts['host'];
-$username = $dbparts['user'];
-$password = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-/**define( 'DB_NAME', 'blinkedsolutions' );
+define( 'DB_NAME', 'dif64bhrd8gajfu9' );
 
 /** Database username */
-/**define( 'DB_USER', 'root' );
+define( 'DB_USER', 'qcoqgm4kapv5qx2d' );
 
 /** Database password */
-/**define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'zhe200nfogly3zvm' );
 
 /** Database hostname */
-/**define( 'DB_HOST', 'localhost:8889' );
+define( 'DB_HOST', 'oliadkuxrl9xdugh.chr7pe7iynqr.eu-west-1.rds.amazonaws.com' );
 
 /** Database charset to use in creating database tables. */
-/**define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
-/**define( 'DB_COLLATE', '' );
-
+define( 'DB_COLLATE', '' );
 
 
 /**#@+
